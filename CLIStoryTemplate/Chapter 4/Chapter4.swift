@@ -7,7 +7,7 @@ import Foundation
 
 func chapterFour() {
     print("Hello worldddddd")
-    print("monkeyyyyy")
+    print("newest")
 
     // Your portion of the story goes here
 }
