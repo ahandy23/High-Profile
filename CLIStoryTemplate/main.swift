@@ -4,6 +4,7 @@
 //
 
 import Foundation
+let hero = "Amanda Pierce"
 
 func readStory() {
     chapterOne()
