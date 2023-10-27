@@ -36,13 +36,13 @@ func gettingReadyforbed(){
     print("Gets in bed")
     
 }
-func winACase(loseACase: Bool) {
+func winACase(loseACase: Bool) -> String {
     
     if  loseACase == true {
-        print("Has a glass of wine")
+        return ("Has a glass of wine")
     }
     else {
-            print("Has a piece of Caramel Cake")
+            return ("Has a piece of Caramel Cake")
         }
 }
 
