@@ -10,6 +10,8 @@ let friend1 = "Jasmine"
 let friend2 = "Tammy"
 let friend3 = "Olivia"
 var verdict = "\"We the jury find you guilty on all counts\""
+var nightClub = ["Truth Night Club", "Indigo Night Club", "Room 112 Night Club", "Compound Night Club"]
+let numberOfDrinks = 3
 
 func goToBed(goOut: Bool) {
     
@@ -36,15 +38,23 @@ func gettingReadyforbed(){
     print("Gets in bed")
     
 }
-func winACase(loseACase: Bool) -> String {
+func winACase(loseACase: Bool)  {
     
     if  loseACase == true {
-        return ("Has a glass of wine")
+        print("Has a glass of wine")
     }
     else {
-            return ("Has a piece of Caramel Cake")
+        print("Has a piece of Caramel Cake")
         }
 }
+
+
+//if numberOfDrinks > 1 {
+   // print("We need another round of drinks")
+//}
+//else numberOfDrinks > 3 {
+   // print("We need to slow down")
+//}
 
 
 //func bedtimeRoutine(){
@@ -66,14 +76,15 @@ func chapterFour() {
     //
     print("\t \(lawyer) stared at her reflection in the mirror feeling down from her day.")
     print("When she wins a case she")
-    (winACase(loseACase: false))
+    winACase(loseACase: false)
               print("but if she loses she")
-     (winACase(loseACase: true))
+    winACase(loseACase: true)
     print("Today at \(lawFirm) \(main) lost her case and had a glass of wine. The day played over and over in her mind. \(verdict)")
     print("\(main) wondered if she should go to bed or maybe go out with friends. Just then she received a text message")
     textThread()
     goToBed(goOut: true)
-        
+    print("\(main) knew a night out with her homegirls \(friend1), \(friend2), and \(friend3) was just what she needed. She thought of their usual spots \(nightClub[0]), \(nightClub[1]), \(nightClub[2]) and \(nightClub[3])")
+    print("")
         
         
         
