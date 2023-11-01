@@ -15,6 +15,28 @@ var friends = ["Jasmine", "Tammy", "Olivia", "Amanda"]
 
 var numberOfDrinks = Int.random(in: 0..<5)
 
+struct Lawfirm {
+    var client: String
+    var settlementAmount: Int
+    var typeOfCases: String
+   
+    
+    
+    func caseWinOrLose(caseDismissed: Bool) {
+        if caseDismissed == false {
+            print("Judgement for the Defendant.")
+        } else {
+            print("Judgement for the Plaintiff.")
+            
+            
+        }
+        
+    }
+}
+
+var gregoryWhite = Lawfirm(client: "Gregory", settlementAmount: 60_000, typeOfCases: "Domestic Abuse")
+var violaDavis = Lawfirm(client: "Viola", settlementAmount: 1_000_000, typeOfCases: "Divorce")
+
 func goToBed(goOut: Bool) {
     
     if goOut == false {
@@ -99,6 +121,9 @@ func chapterFour() {
     print("\(main) knew a night out with her homegirls \(friends[0]), \(friend2), and \(friend3) was just what she needed. She thought of their usual spots \(nightClub[0]), \(nightClub[1]), \(nightClub[2]) and \(nightClub[3])")
     print("\(drinksHad(hadDrinks: numberOfDrinks))")
     print("\(storyUsingLoop())")
+    print("\(gregoryWhite)")
+    print("\(violaDavis)")
+    violaDavis.caseWinOrLose(caseDismissed: false)
         
         
         
