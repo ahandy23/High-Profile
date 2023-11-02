@@ -13,9 +13,26 @@ var caseLoad = ["Case Paperwork", "Laptop", "Briefcase", "Computer paper"]
 var character5 = ("Darrell Fuller")
 var voicemailpeople = ["Mom","Veterinarian","Work Partner","Bestfriend"]
 var messages = ["\"Hi, Mandy this is Mom, call me back when you get this.\"", "\"Hello Ms. Pierce, this is Animal Care, we are calling to make a new appointment for Snickers.\"", "\"Hey Amanda, this is Harold, I have new news on the case.\"", "\"Hey girl this is Tammy, let's hang out tonight\""]
+var investigatorfinding:String = ("location")
+enum Location {
+    case restauraunt, mistressHome, movies
+}
 
+var location: Location = .restauraunt
 
-func storyUsingLoop() {
+func whereToLook (location: Location) {
+    switch location {
+    case .restauraunt:
+        print("Found at checkers")
+    case .mistressHome:
+        print("Found at Kathy")
+    case .movies:
+        print("Found at BelAir")
+    }
+}
+
+//var location = Location.restauraunt
+func Loop() {
     voicemailpeople.sort()
     messages.sort()
     for index in 0...3 {
@@ -43,10 +60,33 @@ func morningSchedule() {
     print("Amanda then decides to makes coffee,while her coffee is rosting she decides to heat up a bagel")
     print("calls out her dog and grabs snickers bowl, and pour's his dog food")
     print(" She then turns off her ac, turn off lights, and grabs her keys,phone, and her birkin purse")
+    
 }
+struct PrivateInvestigator {
+    let name: String
+    let race: String
+    let age: Int
+    let occupationYears: Int
+    
+    func findsEvidence(FindsEvidence:Bool) {
+        if FindsEvidence {
+            print("The Golden Goose has just layed her egg")
+        } else {
+                print("Geesh, this is harder, than I thought, this guy is a saint")
+            }
+        }
+    }
+    
+
+
+
+var James = PrivateInvestigator(name:"James Woods", race: "Caucasion", age: 55, occupationYears: 10)
+
+
 
 func chapterOne() {
-        print(chapterOneTitle)
+    
+    print(chapterOneTitle)
     print("It's a chilly early morning and the 1st of September, the sky is still dark and the birds, have just began to chirp. At 23891 Walker Street, the silence is interuppted by a serene chirping of birds and classical music in the background.")
     morningSchedule()
     grabCoat(coldOutside: true)
@@ -57,39 +97,63 @@ func chapterOne() {
     print("\"Everything from my trunk, we have a lot of work to do if we want to be ready for this case in 3 weeks, bring the L cart closer to the car.\"")
     print("Ashley then grabs her \(caseLoad).")
     print("Amanda and Ashley then walks into the Law Firm, on the 10th floor.They hop out the elavator, and Amanda tells Ashley, to hold any calls for the first hour. Amanda then goes through her messages.")
-   print("She has plenty voicemail messages.")
-    storyUsingLoop()
-    print("Amanda, calls back Harold back,\"Hey Harold, you said you have new info regarding the case\".")
-    print("Yes, I have new info on Viola's husband, she hired a private investigtor, and he has proof, of his cheating, I think we have a slam dunk with this one. ")
-        
+    print("She has plenty voicemail messages.")
+    //storyUsingLoop()
+    print("\"Amanda, calls back Harold back,\"Hey Harold, you said you have new info regarding the case\".")
+    print("\"Yes, I have new info on Viola's husband, she hired a private investigtor, and he has proof, of his cheating, I think we have a slam dunk with this one.\"")
+    print("\"Well, that is good to hear, what's the juice? Amanda ask's\"")
+    print("\"Sydney hired a private investigator, late in the marriage, and he has proof of his cheating, documented.\"")
+    print("OMGG, that is amazing,great work, and if you don't mind send me his number")
+    print("Sure thing, I'll text it to you.")
+    print("\"Great, see you soon.\"")
+    print("\"okay, see you later Amanda.\"")
+    print("Amanda then hangs up the phone, and starts going through her case paperwork.")
+    print("Two hours later, she calls the private investigator.")
+    print("\"Hey James, this is Ms.Pierce, I am Sydney's lawyer,I heard that you have some good news for us.\"")
+    print("Yes I do, I have proof of Mr.Pierce's infidelity, hard cold proof,pictures, locations, the mistress, and her place.")
+    print("\"Oh my God, great to hear, send me these documents, through, my email, it's my full name, the number 79, and at gmail.com.\"")
+    print("\"Sure thing, I'll send it to you now.\"")
+    print("\"Okay thanks, I see it, I'll talk to you later.\"")
+    print("\"Okay goodbye\"")
+   whereToLook(location: location)
+    //enum investigatorfinding {
+    // case location
     
-        
-                
-                
-                
-        
-    }
+    // var _: investigatorfinding = .location
+    //  print(
     
     
-
-       
-        
     
     
-        
-        // Your portion of the story goes here
-        
+    
+    
+    
+    
+    // }
+    
+    
+    
+    
+    
+    
+    
+    
+    // Your portion of the story goes here
+    
     
     //func morningRoutine() {
     
-
-func grabCoat(coldOutside:Bool) {
-    if coldOutside {
-        print ("Amanda then grabs her Alexander Mcqueen peacoat from her coat hook, she throws it on, and opens her garage side door, and puts her 4 digit code into her alarm, and enters her garage, as she locks her door and closes it. ")
-    } else{
-        print("Amanda heads to the garage, turns on alarm,she then closes and locks door and enters garage, and unlocks her Mercedez Benz truck")
-    }
-
-   
     
+    func grabCoat(coldOutside:Bool) {
+        if coldOutside {
+            print ("Amanda then grabs her Alexander Mcqueen peacoat from her coat hook, she throws it on, and opens her garage side door, and puts her 4 digit code into her alarm, and enters her garage, as she locks her door and closes it. ")
+        } else{
+            print("Amanda heads to the garage, turns on alarm,she then closes and locks door and enters garage, and unlocks her Mercedez Benz truck")
+        }
+        
+        
+        
+        
+        
     }
+}

@@ -8,10 +8,10 @@ let hero = "Amanda Pierce"
 
 func readStory() {
     chapterOne()
-    chapterTwo()
-    chapterThree()
-    chapterFour()
-    chapterFive()
+    //chapterTwo()
+    //chapterThree()
+    //chapterFour()
+    //chapterFive()
     
 }
 
