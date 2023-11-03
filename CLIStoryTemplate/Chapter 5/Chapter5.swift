@@ -5,6 +5,25 @@
 
 import Foundation
 var groceryList = ["Apples", "Bananas", "Eggs", "Bread"]
+
+
+
+struct Magnets {
+    var place: String
+    var size: String
+    var type: String
+    var year: Int
+    
+}
+var collection = Magnets(place: "Disney World", size: "Large", type: "Mickey Mouse", year: 2022)
+
+enum TrafficLight {
+    case red
+    case yellow
+    case green
+}
+
+
 func chapterFive() {
     // Your portion of the story goes here
     
@@ -13,4 +32,5 @@ func chapterFive() {
     groceryList.remove(at:1)
     groceryList.append("Bananas")
     //groceryList.count 
+    
 }

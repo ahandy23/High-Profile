@@ -11,14 +11,17 @@ let friend2 = "Tammy"
 let friend3 = "Olivia"
 var verdict = "\"We the jury find you guilty on all counts\""
 var nightClub = ["Truth Night Club", "Indigo Night Club", "Room 112 Night Club", "Compound Night Club"]
-var friends = ["Jasmine", "Tammy", "Olivia", "Amanda"]
+var friends = [friend1 , friend2, main, friend3]
+
 
 var numberOfDrinks = Int.random(in: 0..<5)
+
 
 struct Lawfirm {
     var client: String
     var settlementAmount: Int
     var typeOfCases: String
+    var brandRep: Liquor
    
     
     
@@ -34,8 +37,18 @@ struct Lawfirm {
     }
 }
 
-var gregoryWhite = Lawfirm(client: "Gregory", settlementAmount: 60_000, typeOfCases: "Domestic Abuse")
-var violaDavis = Lawfirm(client: "Viola", settlementAmount: 1_000_000, typeOfCases: "Divorce")
+var gregoryWhite = Lawfirm(client: "Gregory", settlementAmount: 60_000, typeOfCases: "Domestic Abuse", brandRep: .Patron)
+var violaDavis = Lawfirm(client: "Viola", settlementAmount: 1_000_000, typeOfCases: "Divorce", brandRep: .Mojito)
+
+struct NightOut {
+    var homegirl: String
+    var clubOfChoice: String
+    var liquor: Liquor
+    var dressColor: String
+    
+}
+
+
 
 func goToBed(goOut: Bool) {
     
@@ -73,13 +86,12 @@ func winACase(loseACase: Bool)  {
 }
 
 func drinksHad(hadDrinks: Int) {
-    
 //    let result = hadDrinks: numberOfDrinks
-    let result = hadDrinks
+//    let result = hadDrinks
     if  hadDrinks < 1 {
         print("We need another round of drinks")
     }
-    else if hadDrinks > 3 {
+    else if hadDrinks > 5 {
         print("We need to slow down")
     }
     
@@ -89,9 +101,30 @@ func storyUsingLoop() {
     friends.shuffle()
     nightClub.shuffle()
     for index in 0...3 {
-        print("\(friends[index]) yells the club \(nightClub[index]).")
+        print("\(friends[index]) wanted to go to \(nightClub[index]).")
+     
+    }
+    
+    }
+enum Liquor{
+    case Patron, DonJulio, WhiteZenfandel, Mojito
+}
+
+func liquorChoice(liqour: Liquor) {
+    switch liqour {
+    case .Patron:
+        print("Today's special is Patron, Drink up!")
+    case .DonJulio:
+        print("Not a special, but you can still buy it")
+    case .WhiteZenfandel:
+        print("we're fresh out, sorry")
+    case .Mojito:
+        print("You classy lady")
     }
 }
+
+
+
 //func bedtimeRoutine(){
 //    print("Takes Snicker's for a walk")
 //    print("Turns off tv")
@@ -101,7 +134,12 @@ func storyUsingLoop() {
 //}
     //Start story below
 func chapterFour() {
+    var nightOut: NightOut = NightOut(homegirl: "", clubOfChoice: "", liquor: .Patron, dressColor: "")
     
+    
+    
+//    liquorChoice(liqour: violaDavis.brandRep)
+   
     
     //        print("\(main) lost her first case so she ended her night.")
     //        winACase(loseACase: true)
@@ -110,6 +148,7 @@ func chapterFour() {
     //        goToBed(goOut: false)
     //
     print("\t \(lawyer) stared at her reflection in the mirror feeling down from her day.")
+    
     print("When she wins a case she")
     winACase(loseACase: false)
               print("but if she loses she")
@@ -118,14 +157,26 @@ func chapterFour() {
     print("\(main) wondered if she should go to bed or maybe go out with friends. Just then she received a text message")
     textThread()
     goToBed(goOut: true)
-    print("\(main) knew a night out with her homegirls \(friends[0]), \(friend2), and \(friend3) was just what she needed. She thought of their usual spots \(nightClub[0]), \(nightClub[1]), \(nightClub[2]) and \(nightClub[3])")
-    print("\(drinksHad(hadDrinks: numberOfDrinks))")
-    print("\(storyUsingLoop())")
-    print("\(gregoryWhite)")
-    print("\(violaDavis)")
-    violaDavis.caseWinOrLose(caseDismissed: false)
-        
-        
+    print("\(main) knew a night out with her homegirls \(friends[0]), \(friends[1]), and \(friends[3]) was just what she needed. She thought of their usual spots \(nightClub[0]), \(nightClub[1]), \(nightClub[2]) and \(nightClub[3])")
+    
+    for friend in friends {
+        if friend == "Olivia" {
+            print("Olivia had a great idea, to head out on the town. Girls night out")
+            nightOut = NightOut(homegirl: friend, clubOfChoice: nightClub[1], liquor: .Patron, dressColor: "Red")
+        } else {
+           print("\(friend) had an idea, but no one seemed interested")
+        }
+    }
+    
+    print("The girls then headed to \(nightOut.clubOfChoice). They were drinking \(nightOut.liquor). They had a fun idea to all wear the same dress color: they decided on \(nightOut.dressColor). All of the girls were raving that \(nightOut.homegirl) had the best idea after a long, hard day.")
+    print("")
+    drinksHad(hadDrinks: numberOfDrinks)
+//    print("\(storyUsingLoop())")
+//    print("\(gregoryWhite)")
+//    print("\(violaDavis)")
+//    violaDavis.caseWinOrLose(caseDismissed: false)
+//        
+   
         
         
     }
