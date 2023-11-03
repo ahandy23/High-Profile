@@ -15,7 +15,7 @@ var voicemailpeople = ["Mom","Veterinarian","Work Partner","Bestfriend"]
 var messages = ["\"Hi, Mandy this is Mom, call me back when you get this.\"", "\"Hello Ms. Pierce, this is Animal Care, we are calling to make a new appointment for Snickers.\"", "\"Hey Amanda, this is Harold, I have new news on the case.\"", "\"Hey girl this is Tammy, let's hang out tonight\""]
 var investigatorfinding:String = ("location")
 enum Location {
-    case restauraunt, mistressHome, movies
+    case restauraunt, mistressHome,movies
 }
 
 var location: Location = .restauraunt
@@ -23,7 +23,7 @@ var location: Location = .restauraunt
 func whereToLook (location: Location) {
     switch location {
     case .restauraunt:
-        print("Found at checkers")
+        print("got him")
     case .mistressHome:
         print("Found at Kathy")
     case .movies:
@@ -70,7 +70,7 @@ struct PrivateInvestigator {
     
     func findsEvidence(FindsEvidence:Bool) {
         if FindsEvidence {
-            print("The Golden Goose has just layed her egg")
+            print("Got the golden goose")
         } else {
                 print("Geesh, this is harder, than I thought, this guy is a saint")
             }
@@ -115,6 +115,8 @@ func chapterOne() {
     print("\"Sure thing, I'll send it to you now.\"")
     print("\"Okay thanks, I see it, I'll talk to you later.\"")
     print("\"Okay goodbye\"")
+    print("\n \t                           3 years ago")
+    print("A middle aged man is sitting at a table,in the corner of a cafe, sipping his black coffee, stairing, intensely into  ")
    whereToLook(location: location)
     //enum investigatorfinding {
     // case location
