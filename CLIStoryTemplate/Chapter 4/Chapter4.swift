@@ -14,7 +14,7 @@ var nightClub = ["Truth Night Club", "Indigo Night Club", "Room 112 Night Club",
 var friends = [friend1 , friend2, main, friend3]
 
 
-var numberOfDrinks = Int.random(in: 0..<5)
+var numberOfDrinks = Int.random(in: 0...6)
 
 
 struct Lawfirm {
@@ -93,6 +93,8 @@ func drinksHad(hadDrinks: Int) {
     }
     else if hadDrinks > 5 {
         print("We need to slow down")
+    } else {
+        print("We can keep the party going")
     }
     
 }
@@ -122,7 +124,9 @@ func liquorChoice(liqour: Liquor) {
         print("You classy lady")
     }
 }
-
+struct RidesHome {
+    
+}
 
 
 //func bedtimeRoutine(){
@@ -158,20 +162,23 @@ func chapterFour() {
     textThread()
     goToBed(goOut: true)
     print("\(main) knew a night out with her homegirls \(friends[0]), \(friends[1]), and \(friends[3]) was just what she needed. She thought of their usual spots \(nightClub[0]), \(nightClub[1]), \(nightClub[2]) and \(nightClub[3])")
+    print("\(storyUsingLoop())")
     
     for friend in friends {
         if friend == "Olivia" {
             print("Olivia had a great idea, to head out on the town. Girls night out")
-            nightOut = NightOut(homegirl: friend, clubOfChoice: nightClub[1], liquor: .Patron, dressColor: "Red")
+            nightOut = NightOut(homegirl: friend, clubOfChoice: nightClub[1], liquor: .Patron, dressColor: "Purple")
         } else {
            print("\(friend) had an idea, but no one seemed interested")
         }
     }
     
     print("The girls then headed to \(nightOut.clubOfChoice). They were drinking \(nightOut.liquor). They had a fun idea to all wear the same dress color: they decided on \(nightOut.dressColor). All of the girls were raving that \(nightOut.homegirl) had the best idea after a long, hard day.")
-    print("")
+    print("\(friends[1]) continued to buy rounds of drinks.")
     drinksHad(hadDrinks: numberOfDrinks)
-//    print("\(storyUsingLoop())")
+    print("\(main) said. The room started to spin. All of the dancing and \(nightOut.liquor) was getting to much. \(main) decided to say goodnight to her girls")
+    
+    
 //    print("\(gregoryWhite)")
 //    print("\(violaDavis)")
 //    violaDavis.caseWinOrLose(caseDismissed: false)
