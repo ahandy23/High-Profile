@@ -23,7 +23,7 @@ var location: Location = .restauraunt
 func whereToLook (location: Location) {
     switch location {
     case .restauraunt:
-        print("got him")
+        print("seen him at Jean-Georges")
     case .mistressHome:
         print("Found at Kathy")
     case .movies:
@@ -41,25 +41,22 @@ func Loop() {
 }
 
 func morningSchedule() {
-    print("Amanda Wakes up turns off alarm clock")
-    print("and turns over face up in her bed and removes her chanel eye mask")
+    print("Amanda Wakes up and turns off alarm clock,")
+    print("she then turns over face up in her bed and removes her chanel eye mask")
     print("she then sit's up and slides into her chanel slippers")
-    print("and heads to her bathroom, she opens her vanity and grabs her toothpaste and floss.")
+    print("and heads to her bathroom, she opens her medicine cabinet and grabs her toothpaste and floss.")
     print("she set's them down on her sink, and proceeds to rinse her mouth out, and starts flossing her teeth.")
     print("she rinse her mouth again, and brushes her teeth, and finishes off with her mouthwash.")
-    print("she then washes her face with her clinique facial products.")
-    print("she then runs herself some hot water and start's her shower")
-    print("After 20 minutes she turns off the shower, and grabs her towel from it's hook, and walks out her tub.")
-    print("Shen dries herself off, hangs up the towel, and heads to her room, and sits on her bed.")
+    print("She then washes her face with her clinique facial products.")
+    print("Amanda then runs herself some hot water and start's her shower.")
+    print("After 20 minutes she turns off the shower, and proceed's to grab her towel from it's hook, and walks out of her tub.")
+    print("She then dries herself off, hangs up the towel, and heads to her room, and sits on her bed.")
     print("She then applies some lotion to her body and perfume, and goes to her dresser, and puts on her undergarments.")
-    print("Amanda then walks in her massive walk in closet, grabs her suit, and shoes")
-    print(" and dresses herself.")
-    print("she then calls for snickers, walks to his room and wakes him up.")
-    print("After she wakes him up she unwraps and combs her hair,")
-    print(" she then heads to the kitchen, and washes her hands.")
+    print("Amanda then walks in her massive walk in closet, and grabs her suit, and shoes,and dresses herself,she then calls for snickers, walks to his room and wakes him up.")
+    print("After she wakes him up, she unwraps her hair, and style's it to her liking, she then heads to the kitchen, and washes her hands.")
     print("Amanda then decides to makes coffee,while her coffee is rosting she decides to heat up a bagel")
-    print("calls out her dog and grabs snickers bowl, and pour's his dog food")
-    print(" She then turns off her ac, turn off lights, and grabs her keys,phone, and her birkin purse")
+    print(" Amanda then calls out her snickers, grab's his bowl, and pour's his food into his bowl. After he is finishes his food, she cleans out his bowl set's it aside, and takes snickers back to his room.")
+    print(" She then leaves his room and walks to her side door and turns off her ac, turn off her lights, and grabs her keys, phone, and her birkin purse.")
     
 }
 struct PrivateInvestigator {
@@ -116,7 +113,17 @@ func chapterOne() {
     print("\"Okay thanks, I see it, I'll talk to you later.\"")
     print("\"Okay goodbye\"")
     print("\n \t                           3 years ago")
-    print("A middle aged man is sitting at a table,in the corner of a cafe, sipping his black coffee, stairing, intensely into  ")
+    print("A middle aged man is sitting at a table,in the corner of a cafe, sipping his black coffee, stairing, intensely into the morning dew.")
+    print("A blonde girl in her mid 20s,walks up to him wearing, a black apron that reads, \"Sophie's Coffee and Sweets\"")
+    print("\"Hello sir can I get anything else for you?\"")
+    print("The older man turns his head, and looks up at the blonde waitress, who looks like she just did a double, and is at her wits end but is trying to keep a perky attitude for the customers")
+    print("\"Yes a plain bagel, with creme chesse, should do.\"")
+    print("\"Okay bagel with cream cheese, coming right away")
+    print("Once the waitress, walks away the older man looks down, at his paperwork,and removes the top sheet, that is covering his investigative notes.")
+    print("He reviews his notes, after done reviewing them, he sips his coffee, and looks back out the window, and notices that his subject has finally came out of his townhouse, he's on his porch, and seems to be waiting for someone, a lady then appears, a black lady comes out, in a fur rimmed pea coat, and burgundy hair, with a cinnamon skin complexion.")
+    print("Before they move quickly to the vehicle, that's waiting for them out front,James grabs his camera that's beside him and starts taking pictures of the two.")
+    James.findsEvidence(FindsEvidence: true)
+    
    whereToLook(location: location)
     //enum investigatorfinding {
     // case location
