@@ -114,7 +114,7 @@ func chapterFour() {
     winACase(loseACase: false)
               print("but if she loses she")
     winACase(loseACase: true)
-    print("Today at \(lawFirm) \(main) lost her case and had a glass of wine. The day played over and over in her mind. \(verdict)")
+    print("Today at \(lawFirm1) \(main) lost her case and had a glass of wine. The day played over and over in her mind. \(verdict)")
     print("\(main) wondered if she should go to bed or maybe go out with friends. Just then she received a text message")
     textThread()
     goToBed(goOut: true)
