@@ -49,7 +49,6 @@ struct NightOut {
 }
 
 
-
 func goToBed(goOut: Bool) {
     
     if goOut == false {
@@ -124,9 +123,25 @@ func liquorChoice(liqour: Liquor) {
         print("You classy lady")
     }
 }
-struct RidesHome {
-    
+
+
+enum RidesHome: String {
+    case bus = "she took the bus home. She fell asleep and missed her stop."
+    case uber = "she took an uber back. The motion from the car made her throw up in the backseat. She lost her 5 star rating."
+    case friend = "she had a friend come pick her up. She had been avoiding him for weeks but he's always available."
+    case truck = "she drove home in her truck. Before she could get to the corner an officer pulled her over."
+    case walk = "she walked home. She stumbled as she walked and broke her heel when she stepped off the curb"
 }
+
+struct Person {
+    var name: String
+    var age: Int
+    var rideHome: RidesHome?
+}
+
+var amanda = Person(name: "Amanda", age: 42)
+var ridesHome: [RidesHome] = [.bus, .friend, .truck, .uber, .walk]
+
 
 
 //func bedtimeRoutine(){
@@ -139,9 +154,6 @@ struct RidesHome {
     //Start story below
 func chapterFour() {
     var nightOut: NightOut = NightOut(homegirl: "", clubOfChoice: "", liquor: .Patron, dressColor: "")
-    
-    
-    
 //    liquorChoice(liqour: violaDavis.brandRep)
    
     
@@ -152,7 +164,6 @@ func chapterFour() {
     //        goToBed(goOut: false)
     //
     print("\t \(lawyer) stared at her reflection in the mirror feeling down from her day.")
-    
     print("When she wins a case she")
     winACase(loseACase: false)
               print("but if she loses she")
@@ -172,11 +183,14 @@ func chapterFour() {
            print("\(friend) had an idea, but no one seemed interested")
         }
     }
-    
     print("The girls then headed to \(nightOut.clubOfChoice). They were drinking \(nightOut.liquor). They had a fun idea to all wear the same dress color: they decided on \(nightOut.dressColor). All of the girls were raving that \(nightOut.homegirl) had the best idea after a long, hard day.")
     print("\(friends[1]) continued to buy rounds of drinks.")
     drinksHad(hadDrinks: numberOfDrinks)
-    print("\(main) said. The room started to spin. All of the dancing and \(nightOut.liquor) was getting to much. \(main) decided to say goodnight to her girls")
+    print("\(main) said. The room started to spin. All of the dancing and \(nightOut.liquor) was getting too much. \(main) decided to say goodnight to her girls")
+    print("She needed to be smart about her next choice. She had too much to lose if anything went wrong. So")
+    amanda.rideHome = ridesHome.randomElement()
+          guard let amandaRideHome = amanda.rideHome?.rawValue else {return}
+    print(amandaRideHome)
     
     
 //    print("\(gregoryWhite)")
