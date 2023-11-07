@@ -7,11 +7,11 @@ import Foundation
 let hero = "Amanda Pierce"
 
 func readStory() {
-    chapterOne()
+    //chapterOne()
     chapterTwo()
-    chapterThree()
-    chapterFour()
-    chapterFive()
+    //chapterThree()
+    //chapterFour()
+    //chapterFive()
     
 }
 
