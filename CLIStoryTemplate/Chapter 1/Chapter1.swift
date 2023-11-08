@@ -52,7 +52,6 @@ func whereToLook (location: Location) -> String{
         return "Found at the Theatre"
     }
 }
-
 //var location = Location.restauraunt
 func Loop() {
     voicemailpeople.sort()
@@ -108,7 +107,7 @@ func grabCoat(coldOutside:Bool) {
         print("\(Main) heads to the garage, turns on alarm,she then closes and locks door and enters garage, and unlocks her \(vehicle)")
     }
     
-    
+}
 
 
 func chapterOne() {
@@ -161,8 +160,8 @@ func chapterOne() {
     print("\(Main) grabs her paperwork, and heads to her team's meeting room, once everyone has settle in, she explains the case to them.")
     divorce.description()
     
-    
 }
+
 
 //   whereToLook(location: location)
 //enum investigatorfinding {
@@ -194,9 +193,10 @@ func chapterOne() {
 
 
 
-    
-    
-    
-    
-}
+
+
+
+
+
+
 
