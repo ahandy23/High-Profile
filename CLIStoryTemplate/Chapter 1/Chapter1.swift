@@ -101,6 +101,14 @@ struct PrivateInvestigator {
 
 var James = PrivateInvestigator(name:"James Woods", race: "Caucasion", age: 55, occupationYears: 10)
 
+func grabCoat(coldOutside:Bool) {
+    if coldOutside {
+        print ("\(Main) then grabs her Alexander Mcqueen peacoat from her coat hook, she throws it on, and opens her garage side door, and puts her 4 digit code into her alarm, and enters her garage, as she locks her door and closes it. ")
+    } else{
+        print("\(Main) heads to the garage, turns on alarm,she then closes and locks door and enters garage, and unlocks her \(vehicle)")
+    }
+    
+    
 
 
 func chapterOne() {
@@ -117,7 +125,7 @@ func chapterOne() {
     print("\(secretary) then grabs her \(caseLoad).")
     print("\(Main) and \(secretary) then walks into the Law Firm, on the 10th floor.They hop out the elevator, and \(Main) tells \(secretary), to hold any calls for the first hour. \(Main) then goes through her messages.")
     print("She has plenty voicemail messages.")
-    //storyUsingLoop()
+    Loop()
     print("\"\(Main), calls \(lawfirmPartner) back,\"Hey \(lawfirmPartner), you said you have new info regarding the case\".")
     print("\"Yes, I have new info on Viola's husband, she hired a private investigtor, and he has proof, of his cheating, I think we have a slam dunk with this one.\"")
     print("\"Well, that is good to hear, what's the juice? \(Main) ask's\"")
@@ -185,13 +193,7 @@ func chapterOne() {
 //func morningRoutine() {
 
 
-func grabCoat(coldOutside:Bool) {
-    if coldOutside {
-        print ("\(Main) then grabs her Alexander Mcqueen peacoat from her coat hook, she throws it on, and opens her garage side door, and puts her 4 digit code into her alarm, and enters her garage, as she locks her door and closes it. ")
-    } else{
-        print("\(Main) heads to the garage, turns on alarm,she then closes and locks door and enters garage, and unlocks her \(vehicle)")
-    }
-    
+
     
     
     
