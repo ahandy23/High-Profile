@@ -98,7 +98,7 @@ func drinksHad(hadDrinks: Int) {
     
 }
 
-func Loop2 () {
+func storyUsingLoop () {
     friends.shuffle()
     nightClub.shuffle()
     for index in 0...3 {
