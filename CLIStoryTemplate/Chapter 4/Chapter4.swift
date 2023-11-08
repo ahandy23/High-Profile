@@ -12,6 +12,7 @@ let friend3 = "Olivia"
 var verdict = "\"We the jury find you guilty on all counts\""
 var nightClub = ["Truth Night Club", "Indigo Night Club", "Room 112 Night Club", "Compound Night Club"]
 var friends = [friend1 , friend2, main, friend3]
+let lawFirmPartner = "Harold"
 
 
 var numberOfDrinks = Int.random(in: 0...6)
@@ -36,9 +37,9 @@ struct Lawfirm {
         
     }
 }
-
-var gregoryWhite = Lawfirm(client: "Gregory", settlementAmount: 60_000, typeOfCases: "Domestic Abuse", brandRep: .Patron)
-var violaDavis = Lawfirm(client: "Viola", settlementAmount: 1_000_000, typeOfCases: "Divorce", brandRep: .Mojito)
+//
+var gregoryWhite = Lawfirm(client: "Gregory White", settlementAmount: 60_000, typeOfCases: "Domestic Abuse", brandRep: .Patron)
+var violaDavis = Lawfirm(client: "Viola Davis", settlementAmount: 1_000_000, typeOfCases: "Divorce", brandRep: .Mojito)
 
 struct NightOut {
     var homegirl: String
@@ -55,7 +56,7 @@ func goToBed(goOut: Bool) {
         print("Replies to her homegirls. \(main): I'll call yall tomorrow")
         print("\(gettingReadyforbed())")
 }
-else { 
+else {
     print ("Replies to her homegirls. \(main): Lets go out")
 }
     }
@@ -98,7 +99,7 @@ func drinksHad(hadDrinks: Int) {
     
 }
 
-func storyUsingLoop () {
+func storyUsingLoop() {
     friends.shuffle()
     nightClub.shuffle()
     for index in 0...3 {
@@ -130,7 +131,7 @@ enum RidesHome: String {
     case uber = "she took an uber back. The motion from the car made her throw up in the backseat. She lost her 5 star rating."
     case friend = "she had a friend come pick her up. She had been avoiding him for weeks but he's always available."
     case truck = "she drove home in her truck. Before she could get to the corner an officer pulled her over."
-    case walk = "she walked home. She stumbled as she walked and broke her heel when she stepped off the curb"
+    case walk = "she walked home. She stumbled as she walked and broke her heel when she stepped off the curb."
 }
 
 struct Person {
@@ -177,7 +178,7 @@ func chapterFour() {
     
     for friend in friends {
         if friend == "Olivia" {
-            print("Olivia had a great idea, to head out on the town. Girls night out")
+            print("Olivia had a great idea, to head out on the town. Girls night out!")
             nightOut = NightOut(homegirl: friend, clubOfChoice: nightClub[1], liquor: .Patron, dressColor: "Purple")
         } else {
            print("\(friend) had an idea, but no one seemed interested")
@@ -191,16 +192,20 @@ func chapterFour() {
     amanda.rideHome = ridesHome.randomElement()
           guard let amandaRideHome = amanda.rideHome?.rawValue else {return}
     print(amandaRideHome)
-    
+    print("\(main) was so happy to be home. She had an amazing time with her homegirls but the night ended badly. Just then her partner \(lawFirmPartner) called with an urgent message. I need the reports from the Davis and White case, \(lawFirmPartner) said. \(main) searched her briefcase for the two case. Here it is \(main) said.")
+    print("\(violaDavis) and \(gregoryWhite) is that all you needed? Yes said \(lawFirmPartner) have a goodnight.")
+    print("Omg can this night end already \(main) thought, she plopped down on the couch, cuddled with \(dog) and fell asleep")
+    print("The end")
     
 //    print("\(gregoryWhite)")
 //    print("\(violaDavis)")
 //    violaDavis.caseWinOrLose(caseDismissed: false)
-//        
+//
    
         
         
     }
 
     // Your portion of the story goes here
+
 
